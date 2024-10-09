@@ -1,24 +1,18 @@
 const Header = () => {
   return (
-    <header>
-      <div className="header-container" id="home">
-        <div className="nav-bar-container">
-          <ul className="nav-bar">
-            <li className="nav-link">
-              <a href="#home">Home</a>
-            </li>
-            <li className="nav-link">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="nav-link">
-              <a href="#expertise">Expertise</a>
-            </li>
-            <li className="nav-link">
-              <a href="#contact">Contact</a>
-            </li>
+    <header className="shadow-lg mb-8">
+      <div className="flex justify-center p-5">
+        <nav>
+          <ul className="flex gap-20">
+            <li><a href="#home" className="text-white font-bold hover:text-gray-300">Home</a></li>
+            <li><a href="#projects" className="text-white font-bold hover:text-gray-300">Projects</a></li>
+            <li><a href="#expertise" className="text-white font-bold hover:text-gray-300">Expertise</a></li>
+            <li><a href="#contact" className="text-white font-bold hover:text-gray-300">Contact</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
-  )
-}
+  );
+};
+
+export default Header;

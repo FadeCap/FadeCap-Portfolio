@@ -1,33 +1,22 @@
 import Header from './components/Header';
-import Footer from './components/Footer';
-import ProjectCard from './components/ProjectCard';
+import Welcome from './components/Welcome';
+import Projects from './components/Projects';
+import ExpertiseSection from './components/ExpertiseSection';
+import ContactSection from './components/ContactSection';
 
 const App = () => {
-  const projects = [
-    {
-      title: 'Project 1',
-      description: 'Description of project 1.',
-      link: '#',
-    },
-    {
-      title: 'Project 2',
-      description: 'Description of project 2.',
-      link: '#',
-    },
-    // Add more projects as needed
-  ];
-
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="bg-gradient-to-b from-purple-800 to-black min-h-screen text-white">
       <Header />
-      <main className="flex-grow p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
-        </div>
+      <main>
+        <Welcome />
+        <Projects />
+        <ExpertiseSection />
+        <ContactSection />
       </main>
-      <Footer />
+      <footer className="text-center p-4">
+        <h3>© 2023 Stian Busengdal. All rights reserved.</h3>
+      </footer>
     </div>
   );
 };
