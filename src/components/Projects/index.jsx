@@ -40,8 +40,8 @@ const Projects = () => {
       githubLink: "https://github.com/FadeCap/HolidazePE2",
       liveLink: "https://holidazestianlb.netlify.app/",
       images: [
-        "/public/assets/Holidaze-desktop.png",
-        "/public/assets/Holidaze-mobile.png",
+        "/assets/Holidaze-desktop.png",
+        "/assets/Holidaze-mobile.png",
       ],
     },
     {
@@ -52,8 +52,8 @@ const Projects = () => {
         "https://github.com/FadeCap/JavaScript-Frameworks/tree/Javascript-Frameworks-Stian",
       liveLink: "https://javascript-fw-stianb.netlify.app/",
       images: [
-        "/public/assets/JavascriptFrameworks-Desktop.png",
-        "/public/assets/JavascriptFrameworks-mobile.png",
+        "/assets/JavascriptFrameworks-Desktop.png",
+        "/assets/JavascriptFrameworks-mobile.png",
       ],
     },
     {
@@ -63,8 +63,8 @@ const Projects = () => {
       githubLink: "https://github.com/FadeCap/Semester-Project-2",
       liveLink: "https://semeter-project-2-stian.netlify.app/",
       images: [
-        "/public/assets/SemesterProject2-desktop.png",
-        "/public/assets/SemesterProject2-mobile.png",
+        "/assets/SemesterProject2-desktop.png",
+        "/assets/SemesterProject2-mobile.png",
       ],
     },
   ];
