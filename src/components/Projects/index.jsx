@@ -1,11 +1,11 @@
 const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
   return (
-    <div className="bg-purple-900/50 rounded-lg p-5 shadow-md mb-4 max-w-lg">
-      <div className="flex justify-center mb-3 gap-4 h-48">
+    <div className="bg-purple-900/50 rounded-lg p-5 shadow-md mb-4 w-full max-w-md mx-auto"> {/* Updated width */}
+      <div className="flex justify-center mb-3 gap-4 h-48 overflow-hidden">
         {images.map((image, index) => (
           <img
             key={index}
-            className="rounded-lg max-w-xs"
+            className="rounded-lg object-cover max-w-full h-auto" 
             src={image}
             alt={`${title} view`}
           />
@@ -72,13 +72,10 @@ const Projects = () => {
   return (
     <div id="projects" className="my-12">
       <h2 className="text-2xl font-bold text-center mb-8">Projects</h2>
-      <div className="flex flex-col items-center">
-        <div className="flex flex-wrap justify-center gap-4">
-          {projects.slice(0, 2).map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </div>
-        <ProjectCard {...projects[2]} />
+      <div className="flex flex-wrap justify-center gap-6">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
       </div>
     </div>
   );
