@@ -1,10 +1,10 @@
 const expertiseData = [
-  { id: 1, name: 'HTML', imgSrc: '/src/assets/HTML-icon.svg' },
-  { id: 2, name: 'CSS', imgSrc: '/src/assets/CSS-icon.png' },
-  { id: 3, name: 'JavaScript', imgSrc: '/src/assets/Javascript-icon.svg' },
-  { id: 4, name: 'React', imgSrc: '/src/assets/React-icon.png' },
-  { id: 5, name: 'Tailwind', imgSrc: '/src/assets/tailwind-logo.png' },
-  { id: 6, name: 'Bootstrap', imgSrc: '/src/assets/bootstrap.png' },
+  { id: 1, name: 'HTML', imgSrc: '/public/assets/HTML-icon.svg' },
+  { id: 2, name: 'CSS', imgSrc: '/public/assets/CSS-icon.png' },
+  { id: 3, name: 'JavaScript', imgSrc: '/public/assets/Javascript-icon.svg' },
+  { id: 4, name: 'React', imgSrc: '/public/assets/React-icon.png' },
+  { id: 5, name: 'Tailwind', imgSrc: '/public/assets/tailwind-logo.png' },
+  { id: 6, name: 'Bootstrap', imgSrc: '/public/assets/bootstrap.png' },
 ];
 
 const ExpertiseSection = () => {
