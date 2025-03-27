@@ -1,11 +1,13 @@
 const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
   return (
-    <div className="bg-purple-900/50 rounded-lg p-5 shadow-md mb-4 w-full max-w-md mx-auto"> {/* Updated width */}
+    <div className="bg-purple-900/50 rounded-lg p-5 shadow-md mb-4 w-full max-w-md mx-auto">
+      {" "}
+      {/* Updated width */}
       <div className="flex justify-center mb-3 gap-4 h-48 overflow-hidden">
         {images.map((image, index) => (
           <img
             key={index}
-            className="rounded-lg object-cover max-w-full h-auto" 
+            className="rounded-lg object-cover max-w-full h-auto"
             src={image}
             alt={`${title} view`}
           />
@@ -39,10 +41,7 @@ const Projects = () => {
         "Holidaze is a booking website where a registered customer can book a venue. There is also a toggle to become a venue manager, who can add, edit, and delete venues.",
       githubLink: "https://github.com/FadeCap/HolidazePE2",
       liveLink: "https://holidazestianlb.netlify.app/",
-      images: [
-        "./assets/Holidaze-desktop.png",
-        "./assets/Holidaze-mobile.png",
-      ],
+      images: ["./assets/Holidaze-desktop.png", "./assets/Holidaze-mobile.png"],
     },
     {
       title: "FadeShop",
@@ -54,17 +53,6 @@ const Projects = () => {
       images: [
         "./assets/JavascriptFrameworks-Desktop.png",
         "./assets/JavascriptFrameworks-mobile.png",
-      ],
-    },
-    {
-      title: "BidWear",
-      description:
-        "An auction website where a user has credits to bid on different products.",
-      githubLink: "https://github.com/FadeCap/Semester-Project-2",
-      liveLink: "https://semeter-project-2-stian.netlify.app/",
-      images: [
-        "./assets/SemesterProject2-desktop.png",
-        "./assets/SemesterProject2-mobile.png",
       ],
     },
   ];
