@@ -1,12 +1,12 @@
-import Header from './components/Header';
-import Welcome from './components/Welcome';
-import Projects from './components/Projects';
-import ExpertiseSection from './components/ExpertiseSection';
-import ContactSection from './components/ContactSection';
+import Header from "./components/Header";
+import Welcome from "./components/Welcome";
+import Projects from "./components/Projects";
+import ExpertiseSection from "./components/ExpertiseSection";
+import ContactSection from "./components/ContactSection";
 
 const App = () => {
   return (
-    <div className="bg-gradient-to-b from-purple-800 to-black min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <Header />
       <main>
         <Welcome />
