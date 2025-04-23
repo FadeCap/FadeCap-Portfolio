@@ -1,0 +1,13 @@
+#header {
+  background-color: var(--bg-card);
+  box-shadow: var(--card-shadow);
+}
+
+#header-link {
+  color: var(--text-primary);
+}
+
+#header-link:hover,
+#header-link:focus {
+  color: var(--link-hover);
+}

@@ -1,12 +1,12 @@
-import Header from './components/Header';
-import Welcome from './components/Welcome';
-import Projects from './components/Projects';
-import ExpertiseSection from './components/ExpertiseSection';
-import ContactSection from './components/ContactSection';
+import Header from "./Components/Header";
+import Welcome from "./Components/Welcome";
+import Projects from "./Components/Projects";
+import ExpertiseSection from "./Components/ExpertiseSection";
+import ContactSection from "./Components/ContactSection";
 
 const App = () => {
   return (
-    <div className="bg-gradient-to-b from-purple-800 to-black min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <Header />
       <main>
         <Welcome />
@@ -14,9 +14,7 @@ const App = () => {
         <ExpertiseSection />
         <ContactSection />
       </main>
-      <footer className="text-center p-4">
-        <h3>© 2023 Stian Busengdal. All rights reserved.</h3>
-      </footer>
+      <footer className="text-center p-4"></footer>
     </div>
   );
 };

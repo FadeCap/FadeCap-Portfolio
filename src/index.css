@@ -3,6 +3,38 @@
 @tailwind utilities;
 
 #root {
-  font-family: Poppins, sans-serif;
+  /*
+  CSS VARIABLES - Palenight-inspired "Catcuppin" Palette (I drink coffee btw) 
+*/
+
+  /* Base Backgrounds */
+  --bg-main: #292d3e; /* Twilight Mocha */
+  --bg-card: #3b4252; /* Elevated Cocoa Slate */
+
+  /* Text Colors */
+  --text-primary: #eeffff; /* Creamy Vanilla */
+  --text-secondary: #c8c5d1; /* Gentle Mist Gray */
+  --text-muted: #9a96aa; /* For optional soft notes */
+
+  /* Link & Accent Colors */
+  --link-default: #ffcb6b; /* Golden Brew */
+  --link-hover: #de775e; /* Cinnamon Coral */
+  --accent-button: #d89a66; /* Cozy Caramel */
+  --accent-focus: #c792ea; /* Warm Mauve */
+
+  /* Border & Line Colors */
+  --border-color: #1f2233; /* Shadow Roast */
+  --divider-color: rgba(255, 255, 255, 0.07); /* Subtle divider lines */
+
+  /* Shadows & Effects */
+  --card-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  --hover-glow: 0 0 6px rgba(222, 119, 94, 0.5);
+
+  /* Font */
+  --font-poppins: Poppins, sans-serif;
+
+  font-family: var(--font-poppins);
   font-size: 18px;
+  background-color: var(--bg-main);
+  color: var(--primary-text-color);
 }
