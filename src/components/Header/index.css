@@ -1,0 +1,8 @@
+#header-link {
+  color: var(--text-primary);
+}
+
+#header-link:hover,
+#header-link:focus {
+  color: var(--link-hover);
+}

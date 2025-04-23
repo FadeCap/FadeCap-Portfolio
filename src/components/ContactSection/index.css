@@ -1,0 +1,14 @@
+#contact {
+  color: var(--primary-text-color);
+  background-color: var(--bg-card);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--link-hover);
+  text-shadow: 0 0 6px rgba(222, 119, 94, 0.5);
+}
+
+.contact-link {
+  text-decoration: underline;
+}

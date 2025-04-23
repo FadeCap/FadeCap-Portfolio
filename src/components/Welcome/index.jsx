@@ -1,7 +1,7 @@
 const Welcome = () => {
   return (
-    <div className="flex flex-col items-center text-center py-8">
-      <p className="max-w-xl text-lg font-bold">
+    <div className="flex flex-col items-center text-center py-8 ">
+      <p className="max-w-xl text-lg font-bold bg-cat-card">
         Hello! <br />
         My name is Stian and Im a Front End developer. If you scroll down, you
         can see some projects I have done. Thank you for taking the time to look

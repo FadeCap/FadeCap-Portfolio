@@ -38,33 +38,3 @@
   background-color: var(--bg-main);
   color: var(--primary-text-color);
 }
-
-#hamburger-container {
-  background-color: var(--bg-card);
-  box-shadow: var(--card-shadow);
-}
-
-#hamburger-links:hover,
-#hamburger-links:focus {
-  background-color: var(--links-highligths);
-  color: var(--text-primary);
-  text-shadow: 0 0 6px rgba(222, 119, 94, 0.5);
-  outline: 2px solid var(--links-highligths);
-  outline-offset: 2px;
-}
-
-#contact {
-  color: var(--primary-text-color);
-  background-color: var(--bg-card);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--link-hover);
-  text-shadow: 0 0 6px rgba(222, 119, 94, 0.5);
-}
-
-#project-container {
-  background-color: var(--bg-card);
-  box-shadow: var(--card-shadow);
-}

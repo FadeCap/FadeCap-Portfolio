@@ -1,0 +1,15 @@
+#project-container {
+  background-color: var(--bg-card);
+  box-shadow: var(--card-shadow);
+}
+
+#project-buttons {
+  background-color: var(--accent-button);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+#project-buttons:hover,
+#project-buttons:focus {
+  background-color: var(--link-hover);
+}

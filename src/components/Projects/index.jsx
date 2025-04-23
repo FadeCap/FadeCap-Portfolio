@@ -1,3 +1,5 @@
+import "./index.css";
+
 const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
   return (
     <div
@@ -19,16 +21,10 @@ const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className=" font-semibold mb-4">{description}</p>
       <div className="flex gap-4">
-        <a
-          href={githubLink}
-          className="border-white border-2  py-2 px-4 rounded hover:bg-purple-600"
-        >
+        <a href={githubLink} id="project-buttons" className=" py-2 px-4">
           GitHub
         </a>
-        <a
-          href={liveLink}
-          className="border-white border-2  py-2 px-4 rounded hover:bg-purple-600"
-        >
+        <a href={liveLink} id="project-buttons" className="py-2 px-4">
           Netlify live host
         </a>
       </div>
