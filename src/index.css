@@ -2,48 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
 #root {
-
-/*
+  /*
   CSS VARIABLES - Palenight-inspired "Catcuppin" Palette (I drink coffee btw) 
 */
 
---main-bg-color: #292D3E;
---primary-text-color: #EEFFFF;
---secondary-text: #C3B4C1;
---card-background: #32374D;
---accent-buttons: #F78C6C;
---links-highligths: #FFCB6B;
---borders-outlines: #1F2233;
---detail-icons: #C792EA;
+  /* Base Backgrounds */
+  --bg-main: #292d3e; /* Twilight Mocha */
+  --bg-card: #3b4252; /* Elevated Cocoa Slate */
 
+  /* Text Colors */
+  --text-primary: #eeffff; /* Creamy Vanilla */
+  --text-secondary: #c8c5d1; /* Gentle Mist Gray */
+  --text-muted: #9a96aa; /* For optional soft notes */
 
-  font-family: Poppins, sans-serif;
+  /* Link & Accent Colors */
+  --link-default: #ffcb6b; /* Golden Brew */
+  --link-hover: #de775e; /* Cinnamon Coral */
+  --accent-button: #d89a66; /* Cozy Caramel */
+  --accent-focus: #c792ea; /* Warm Mauve */
+
+  /* Border & Line Colors */
+  --border-color: #1f2233; /* Shadow Roast */
+  --divider-color: rgba(255, 255, 255, 0.07); /* Subtle divider lines */
+
+  /* Shadows & Effects */
+  --card-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  --hover-glow: 0 0 6px rgba(222, 119, 94, 0.5);
+
+  /* Font */
+  --font-poppins: Poppins, sans-serif;
+
+  font-family: var(--font-poppins);
   font-size: 18px;
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-main);
   color: var(--primary-text-color);
 }
 
-
 #hamburger-container {
-  background-color: var(--card-background);
+  background-color: var(--bg-card);
+  box-shadow: var(--card-shadow);
 }
 
-#hamburger-links {
-
-}
-
-#hamburger-links:hover {
+#hamburger-links:hover,
+#hamburger-links:focus {
   background-color: var(--links-highligths);
-  text-decoration: none;
-  text-shadow: 0 0 5px rgba(247, 140, 108, 0.4);
+  color: var(--text-primary);
+  text-shadow: 0 0 6px rgba(222, 119, 94, 0.5);
+  outline: 2px solid var(--links-highligths);
+  outline-offset: 2px;
 }
 
 #contact {
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
+  background-color: var(--bg-card);
 }
 
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--link-hover);
+  text-shadow: 0 0 6px rgba(222, 119, 94, 0.5);
+}
+
+#project-container {
+  background-color: var(--bg-card);
+  box-shadow: var(--card-shadow);
+}

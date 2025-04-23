@@ -1,5 +1,3 @@
-import "./index.css";
-
 const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
   return (
     <div
