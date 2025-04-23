@@ -43,7 +43,11 @@ const HamburgerMenu = () => {
                 id="hamburger-links"
                 className="py-4 text-xl  w-full text-center"
               >
-                <a href="#home" className="block px-4" onClick={closeMenu}>
+                <a
+                  href="#welcome-container"
+                  className="block px-4"
+                  onClick={closeMenu}
+                >
                   Home
                 </a>
               </li>
