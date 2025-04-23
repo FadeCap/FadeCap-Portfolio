@@ -1,8 +1,10 @@
+import "./index.css";
+
 import HamburgerMenu from "../HamburgerMenu";
 
 const Header = () => {
   return (
-    <header className="flex items-center flex-col justify-between p-5 text-white shadow-lg mb-8">
+    <header className="flex items-center flex-col justify-between p-5 shadow-lg mb-8">
       <HamburgerMenu />
       <nav className="hidden md:flex">
         <ul className="flex gap-20">

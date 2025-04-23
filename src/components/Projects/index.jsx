@@ -1,6 +1,11 @@
+import "./index.css";
+
 const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
   return (
-    <div className="bg-purple-900/50 rounded-lg p-5 shadow-md mb-4 w-full max-w-md mx-auto">
+    <div
+      id="project-container"
+      className="bg-purple-900/50 rounded-lg p-5 shadow-md mb-4 w-full max-w-md mx-auto"
+    >
       {" "}
       {/* Updated width */}
       <div className="flex justify-center mb-3 gap-4 h-48 overflow-hidden">
@@ -14,17 +19,17 @@ const ProjectCard = ({ title, description, githubLink, liveLink, images }) => {
         ))}
       </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-white font-semibold mb-4">{description}</p>
+      <p className=" font-semibold mb-4">{description}</p>
       <div className="flex gap-4">
         <a
           href={githubLink}
-          className="border-white border-2 text-white py-2 px-4 rounded hover:bg-purple-600"
+          className="border-white border-2  py-2 px-4 rounded hover:bg-purple-600"
         >
           GitHub
         </a>
         <a
           href={liveLink}
-          className="border-white border-2 text-white py-2 px-4 rounded hover:bg-purple-600"
+          className="border-white border-2  py-2 px-4 rounded hover:bg-purple-600"
         >
           Netlify live host
         </a>

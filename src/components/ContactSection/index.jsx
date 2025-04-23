@@ -1,6 +1,8 @@
+import "./index.css";
+
 const ContactSection = () => {
   return (
-    <section id="contact" className="contact-section bg-purple-800/50 rounded-lg p-5 shadow-md mb-4 max-w-lg mx-auto">
+    <section id="contact" className="contact-section rounded-lg p-5 shadow-md mb-4 max-w-lg mx-auto">
       <h2 className="text-2xl font-bold text-center mb-4">Contact Me</h2>
       <ul className="contact-list space-y-2">
         <li>

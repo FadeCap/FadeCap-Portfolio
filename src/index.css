@@ -2,9 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 #root {
+
+/*
+  CSS VARIABLES - Palenight-inspired "Catcuppin" Palette (I drink coffee btw) 
+*/
+
+--main-bg-color: #292D3E;
+--primary-text-color: #EEFFFF;
+--secondary-text: #C3B4C1;
+--card-background: #32374D;
+--accent-buttons: #F78C6C;
+--links-highligths: #FFCB6B;
+--borders-outlines: #1F2233;
+--detail-icons: #C792EA;
+
+
   font-family: Poppins, sans-serif;
   font-size: 18px;
-  background-color: #6a2cb6;
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+}
+
+
+#hamburger-container {
+  background-color: var(--card-background);
+}
+
+#hamburger-links {
+
+}
+
+#hamburger-links:hover {
+  background-color: var(--links-highligths);
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(247, 140, 108, 0.4);
+}
+
+#contact {
+  color: var(--primary-text-color)
 }
 
