@@ -1,3 +1,5 @@
+import "./index.css";
+
 const Welcome = () => {
   return (
     <div
@@ -11,6 +13,7 @@ const Welcome = () => {
         through my portfolio!
       </p>
       <img
+        id="portrait"
         className="rounded-full w-48 h-48 object-cover mt-4"
         src="./assets/my-image.png"
         alt="A picture of me (Stian)"

@@ -1,13 +1,13 @@
 #header {
-  background-color: var(--bg-card);
-  box-shadow: var(--card-shadow);
+  background-color: var(--ctp-mantle); 
+  box-shadow: var(--ctp-box-shadow);
 }
 
 #header-link {
-  color: var(--text-primary);
+  color: var(--ctp-lavender);
 }
 
 #header-link:hover,
 #header-link:focus {
-  color: var(--link-hover);
+  color: var(--ctp-rosewater);
 }
