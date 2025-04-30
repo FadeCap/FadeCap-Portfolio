@@ -1,10 +1,8 @@
 
-// Vite + React + Tailwind Portfolio Starter
-// Assumes Tailwind and dependencies already set up
-
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./index.css";
+import Image from "./assets/my-image.png";
 
 const App = () => {
   useEffect(() => {
@@ -37,11 +35,13 @@ const App = () => {
         <p className="text-overlay0 text-lg max-w-xl mx-auto">
           A front-end developer crafting responsive, accessible, and beautiful web experiences.
         </p>
-
+        <div className="image-container flex justify-center">
+          <img src={Image} className="rounded-full size-2/12 py-4 my-6" alt="Image of Stian, in gray-scale" />
+        </div>
       </section>
 
       {/* ABOUT ME */}
-      <section id="about" className="px-6 py-20 bg-surface0 rounded-lg mx-4 md:mx-16 shadow-card">
+      <section id="about" className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card">
         <h3 className="text-2xl font-semibold mb-4 text-lavender">About Me</h3>
         <p className="text-overlay0 max-w-3xl">
           I'm passionate about building elegant and functional interfaces with modern tools like React, TailwindCSS, and Framer Motion. I focus on clean code, pixel-perfect design, and accessibility.
@@ -81,7 +81,7 @@ const App = () => {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="px-6 py-20 bg-surface0 rounded-lg mx-4 md:mx-16 shadow-card">
+      <section id="contact" className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card">
         <h3 className="text-2xl font-semibold mb-4 text-lavender">Contact</h3>
         <div className="space-y-4 max-w-md text-overlay0">
           <p><strong>Email:</strong> <a href="mailto:stian94lb@gmail.com" className="text-lavender hover:text-green">stian94lb@gmail.com</a></p>
