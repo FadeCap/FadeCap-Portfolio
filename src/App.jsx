@@ -62,7 +62,7 @@ const App = () => {
           >
             <h4 className="text-xl font-bold text-rosewater mb-2">Holidaze</h4>
             <p className="text-overlay0 mb-4">
-              Booking website project <br></br>
+              Booking website <br></br>
               React, TailwindCSS <br></br>
               API integration, Authorization, CRUD
             </p>
