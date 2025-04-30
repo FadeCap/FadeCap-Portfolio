@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./index.css";
@@ -6,6 +5,7 @@ import Image from "./assets/my-image.png";
 import reactIcon from "./assets/React-icon.png";
 import jsIcon from "./assets/Javascript-icon.svg";
 import tailwindIcon from "./assets/tailwind-logo.png";
+import holidazeImg from "./assets/Holidaze-desktop.png";
 
 const App = () => {
   useEffect(() => {
@@ -17,9 +17,15 @@ const App = () => {
       {/* NAVBAR */}
       <header className="bg-mantle sticky top-0 text-rosewater px-6 py-4 flex justify-center items-center shadow-md">
         <nav className="space-x-4 text-center">
-          <a href="#about" className="hover:text-green transition">About</a>
-          <a href="#projects" className="hover:text-green transition">Projects</a>
-          <a href="#contact" className="hover:text-green transition">Contact</a>
+          <a href="#about" className="hover:text-green transition">
+            About
+          </a>
+          <a href="#projects" className="hover:text-green transition">
+            Projects
+          </a>
+          <a href="#contact" className="hover:text-green transition">
+            Contact
+          </a>
         </nav>
       </header>
 
@@ -35,16 +41,26 @@ const App = () => {
         </motion.h2>
         <p className="text-overlay1 mt-2">Lillestrøm, Akershus, Norway</p>
         <p className="text-overlay0 text-lg max-w-xl mx-auto">
-          A front-end developer crafting responsive, accessible, and beautiful web experiences.
+          A front-end developer crafting responsive, accessible, and beautiful
+          web experiences.
         </p>
         <div className="image-container flex justify-center">
-          <img src={Image} className="rounded-full max-w-48 py-4 my-6" alt="Image of Stian, in gray-scale" />
+          <img
+            src={Image}
+            className="rounded-full max-w-48 py-4 my-6"
+            alt="Image of Stian, in gray-scale"
+          />
         </div>
       </section>
 
       {/* Proficiencies */}
-      <section id="about" className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card">
-        <h3 className="text-2xl font-semibold mb-4 text-lavender">Proficiencies</h3>
+      <section
+        id="about"
+        className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card"
+      >
+        <h3 className="text-2xl font-semibold mb-4 text-lavender">
+          Proficiencies
+        </h3>
         <div className="grid-rows-2 flex p-4 gap-6">
           <img src={reactIcon} alt="React logo" className="h-16 w-16" />
           <img src={jsIcon} alt="Javascript logo" className="h-16 w-16" />
@@ -55,17 +71,30 @@ const App = () => {
       {/* PROJECTS */}
       <section id="projects" className="px-6 py-20">
         <h3 className="text-2xl font-semibold mb-6 text-lavender">Projects</h3>
-        <h4 className="font-semibold mb-3">Currently working on a few that I will add here!</h4>
+        <h4 className="font-semibold mb-3">
+          Currently working on a few that I will add here!
+        </h4>
         <div className="grid md:grid-cols-2 gap-6">
-          <div
-            className="bg-surface0 p-6 rounded-xl shadow-card hover:shadow-card-hover transition transform hover:-translate-y-1"
-          >
-            <h4 className="text-xl font-bold text-rosewater mb-2">Holidaze</h4>
-            <p className="text-overlay0 mb-4">
-              Booking website <br></br>
-              React, TailwindCSS <br></br>
-              API integration, Authorization, CRUD
-            </p>
+          <div className="bg-surface0 p-6 rounded-xl shadow-card hover:shadow-card-hover transition transform hover:-translate-y-1">
+            <div className="flex-col gap-4">
+              <h4 className="text-xl font-bold text-rosewater mb-2">
+                Holidaze
+              </h4>
+              <div className="flex space-x-6">
+                <p className="text-overlay0">
+                  Booking website <br></br>
+                  React, TailwindCSS <br></br>
+                  API integration, Authorization, CRUD
+                </p>
+                <img
+                  src={holidazeImg}
+                  alt="Image of the project Holidaze"
+                  className="h-24 w
+            -24"
+                />
+              </div>
+            </div>
+
             <div className="flex space-x-4">
               <a
                 href="https://github.com/FadeCap/HolidazePE2"
@@ -81,9 +110,7 @@ const App = () => {
               </a>
             </div>
           </div>
-          <div
-            className="bg-surface0 p-6 rounded-xl shadow-card hover:shadow-card-hover transition transform hover:-translate-y-1"
-          >
+          <div className="bg-surface0 p-6 rounded-xl shadow-card hover:shadow-card-hover transition transform hover:-translate-y-1">
             <h4 className="text-xl font-bold text-rosewater mb-2">FadeShop</h4>
             <p className="text-overlay0 mb-4">
               E-commerce <br></br>
@@ -105,24 +132,52 @@ const App = () => {
               </button>
             </div>
           </div>
-
-        </div >
-      </section >
+        </div>
+      </section>
 
       {/* CONTACT */}
-      < section id="contact" className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card" >
+      <section
+        id="contact"
+        className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card"
+      >
         <h3 className="text-2xl font-semibold mb-4 text-lavender">Contact</h3>
         <div className="space-y-4 max-w-md text-overlay0">
-          <p><strong>Email:</strong> <a href="mailto:stian94lb@gmail.com" className="text-lavender hover:text-green">stian94lb@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+4799458676" className="text-lavender hover:text-green">+47 99 45 86 76</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/stian-busengdal/" target="_blank" rel="noopener noreferrer" className="text-lavender hover:text-green">stian-busengdal</a></p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a
+              href="mailto:stian94lb@gmail.com"
+              className="text-lavender hover:text-green"
+            >
+              stian94lb@gmail.com
+            </a>
+          </p>
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a
+              href="tel:+4799458676"
+              className="text-lavender hover:text-green"
+            >
+              +47 99 45 86 76
+            </a>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>{" "}
+            <a
+              href="https://www.linkedin.com/in/stian-busengdal/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lavender hover:text-green"
+            >
+              stian-busengdal
+            </a>
+          </p>
         </div>
-      </section >
+      </section>
 
       <footer className="text-center text-sm text-overlay0 py-8">
         © {new Date().getFullYear()} Stian Busengdal. All rights reserved.
       </footer>
-    </div >
+    </div>
   );
 };
 
