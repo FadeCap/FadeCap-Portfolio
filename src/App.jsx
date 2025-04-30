@@ -3,6 +3,9 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./index.css";
 import Image from "./assets/my-image.png";
+import reactIcon from "./assets/React-icon.png";
+import jsIcon from "./assets/Javascript-icon.svg";
+import tailwindIcon from "./assets/tailwind-logo.png";
 
 const App = () => {
   useEffect(() => {
@@ -39,17 +42,20 @@ const App = () => {
         </div>
       </section>
 
-      {/* ABOUT ME */}
+      {/* Proficiencies */}
       <section id="about" className="px-6 py-20 rounded-lg mx-4 md:mx-16 shadow-card">
-        <h3 className="text-2xl font-semibold mb-4 text-lavender">About Me</h3>
-        <p className="text-overlay0 max-w-3xl">
-          I'm passionate about building elegant and functional interfaces with modern tools like React, TailwindCSS, and Framer Motion. I focus on clean code, pixel-perfect design, and accessibility.
-        </p>
+        <h3 className="text-2xl font-semibold mb-4 text-lavender">Proficiencies</h3>
+        <div className="grid-rows-2 flex p-4 gap-6">
+          <img src={reactIcon} alt="React logo" className="h-16 w-16" />
+          <img src={jsIcon} alt="Javascript logo" className="h-16 w-16" />
+          <img src={tailwindIcon} alt="Tailwind logo" className="h-16 w-16" />
+        </div>
       </section>
 
       {/* PROJECTS */}
       <section id="projects" className="px-6 py-20">
         <h3 className="text-2xl font-semibold mb-6 text-lavender">Projects</h3>
+        <h4 className="font-semibold mb-3">Currently working on a few that I will add here!</h4>
         <div className="grid md:grid-cols-2 gap-6">
           <div
             className="bg-surface0 p-6 rounded-xl shadow-card hover:shadow-card-hover transition transform hover:-translate-y-1"
