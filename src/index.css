@@ -1,21 +1,97 @@
+/* You can define custom Tailwind classes using @layer if needed */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; /* Custom base styling */
 
-#root {
-  --ctp-base:      #1e1e2e; /* background-color */
-  --ctp-mantle:    #181825; /* Header/Footer bg */
-  --ctp-surface0:  #313244; /* Card / Container bg */
-  --ctp-lavender:  #b4befe; /* Accent headings/buttons */
-  --ctp-green:     #a6e3a1; /* Hover animations */
-  --ctp-rosewater: #f5e0dc; /* Success elements/links */
-  --ctp-overlay0:  #6c7086; /* Text highlights/quotes */
-  --ctp-box-shadow: 0 8px 24px rgba(180, 190, 254, 0.12); /* Lavender Box Shadow */
-  /* Font */
-  --font-poppins: "Poppins", sans-serif;
+/* Base styles */
+body {
+  @apply bg-base text-rosewater;
+}
 
-  font-family: var(--font-poppins);
-  font-size: 18px;
-  background-color: var(--ctp-base);
-  color: var(--ctp-rosewater);
+body {
+  @apply bg-base text-rosewater;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar and page layout */
+header {
+  @apply bg-mantle text-rosewater px-6 py-4 flex justify-between items-center shadow-md;
+}
+
+nav a {
+  @apply text-lavender hover:text-green transition duration-200;
+}
+
+h1 {
+  @apply text-2xl font-bold text-lavender;
+}
+
+h2 {
+  @apply text-4xl md:text-6xl font-extrabold mb-4;
+}
+
+p {
+  @apply text-overlay0 text-lg max-w-xl mx-auto;
+}
+
+section {
+  @apply px-6 py-20 rounded-lg mx-4 md:mx-16;
+}
+
+footer {
+  @apply text-center text-sm text-overlay0 py-8;
+}
+
+/* Custom shadow classes */
+.shadow-card {
+  @apply shadow-lg;
+}
+
+.shadow-card-hover {
+  @apply shadow-xl;
+}
+
+/* Animations */
+@layer components {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section */
+section#hero {
+  @apply text-center;
+  padding-top: 80px;
+}
+
+section#hero h2 {
+  @apply text-4xl md:text-6xl font-extrabold;
+  color: var(--lavender);
+}
+
+section#hero p {
+  @apply text-overlay0 text-lg;
+}
+
+section#about,
+section#projects,
+section#contact {
+  @apply px-6 py-20  rounded-lg mx-4 md:mx-16 shadow-card;
+}
+
+section#contact p a {
+  @apply text-lavender hover:text-green;
 }
