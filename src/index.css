@@ -5,16 +5,16 @@
 
 /* Base styles */
 body {
-  @apply bg-base text-rosewater font-sans;
+  @apply bg-base text-rosewater;
 }
 
 
 
 body {
-  @apply bg-base text-rosewater font-sans;
+  @apply bg-base text-rosewater;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar and page layout */
