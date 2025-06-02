@@ -113,7 +113,7 @@ const App = () => {
                 GitHub
               </a>
               <a
-                href="https://holidaze-stianlb.netlify.app/"
+                href="https://holidazestianlb.netlify.app/"
                 className="text-lavender hover:text-green underline text-sm"
               >
                 Live Demo
