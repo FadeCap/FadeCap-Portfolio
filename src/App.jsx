@@ -8,6 +8,7 @@ import typescriptIcon from "./assets/typescript-logo.png";
 import tailwindIcon from "./assets/tailwind-logo.png";
 import holidazeImg from "./assets/Holidaze-desktop.png";
 import fadeshopImg from "./assets/JavascriptFrameworks-Desktop.png";
+import { AuroraHero } from "./Components/AuroraHero";
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-base min-h-screen flex flex-col justify-center items-center text-rosewater">
+    <AuroraHero>
       {/* NAVBAR */}
       <header className="bg-mantle sticky top-0 text-rosewater px-6 py-4 flex justify-center items-center shadow-md w-full">
         <nav className="space-x-4 text-center">
@@ -200,7 +201,7 @@ const App = () => {
       <footer className="text-center text-sm text-overlay0 py-8">
         © {new Date().getFullYear()} Stian Busengdal. All rights reserved.
       </footer>
-    </div>
+    </AuroraHero>
   );
 };
 
