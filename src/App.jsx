@@ -148,12 +148,12 @@ const App = () => {
               >
                 GitHub
               </a>
-              <button
+              <a
                 href="https://javascript-fw-stianb.netlify.app/"
                 className="text-lavender hover:text-green underline text-sm"
               >
                 Live Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
